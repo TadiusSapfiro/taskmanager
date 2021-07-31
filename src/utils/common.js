@@ -3,7 +3,7 @@ const castTimeFormat = (value) => {
 };
 
 export const formatTime = (date) => {
-  const hours = castTimeFormat(date.getHours() % 12);
+  const hours = castTimeFormat(date.getHours() % 24);
   const minutes = castTimeFormat(date.getMinutes());
 
   return `${hours}:${minutes}`;
@@ -28,20 +28,4 @@ export const getRandomArrayItem = (array) => {
   return array[randomIndex];
 };
 
-export const createElement = (template) => {
-  const newElement = document.createElement(`div`);
-  newElement.innerHTML = template;
 
-  return newElement.firstChild;
-};
-
-export const render = (container, element, place = `beforeend`) => {
-  switch (place) {
-    case `afterbegin`:
-      container.prepend(element);
-      break;
-    case `beforeend`:
-      container.append(element);
-      break;
-  }
-};

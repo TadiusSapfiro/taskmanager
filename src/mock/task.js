@@ -1,5 +1,5 @@
 import {COLORS, DescriptionItems} from "../const.js";
-import {getRandomDate, getRandomArrayItem} from "../utils.js";
+import {getRandomDate, getRandomArrayItem} from "../utils/common.js";
 
 const DefaultRepeatingDays = {
   "mo": false,
