@@ -50,7 +50,6 @@ const renderTasks = (taskListElement, tasks) => {
   });
 };
 
-
 const getSortedTasks = (tasks, sortType, from, to) => {
   const sortedTasks = tasks.slice();
 
@@ -112,8 +111,8 @@ export default class BoardController {
     render(container, this._sortComponent);
     render(container, this._tasksComponent);
 
+    // рендеринг первой пачки карточек
     const taskListElement = this._tasksComponent.getElement();
-
     let showingTasksCount = Count.SHOWING_ON_START;
     renderTasks(taskListElement, tasks.slice(0, showingTasksCount));
 
