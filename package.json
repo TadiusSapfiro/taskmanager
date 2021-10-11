@@ -10,13 +10,20 @@
     "test": "npm run eslint"
   },
   "devDependencies": {
+    "css-loader": "^6.3.0",
     "eslint": "6.1.0",
     "eslint-config-htmlacademy": "0.5.2",
+    "moment-locales-webpack-plugin": "^1.2.0",
+    "style-loader": "^3.3.0",
     "webpack": "5.21.1",
     "webpack-cli": "4.5.0",
     "webpack-dev-server": "3.11.2"
   },
   "engines": {
     "node": "10"
+  },
+  "dependencies": {
+    "flatpickr": "^4.6.9",
+    "moment": "^2.29.1"
   }
 }
